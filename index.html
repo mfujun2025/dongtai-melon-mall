@@ -704,6 +704,18 @@
     .hero-buttons { flex-direction: column; }
     .btn-primary, .btn-outline { text-align: center; }
   }
+
+  /* ===== 团购弹窗 ===== */
+  .group-buy-modal { display: none; position: fixed; inset: 0; z-index: 999; }
+  .group-buy-modal.show { display: flex; align-items: center; justify-content: center; }
+  .modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+  .modal-box { position: relative; background: var(--white); border-radius: 16px; padding: 32px; max-width: 460px; width: calc(100% - 48px); text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+  .modal-close { position: absolute; top: 10px; right: 14px; background: none; border: none; font-size: 28px; line-height: 1; color: #999; cursor: pointer; }
+  .modal-close:hover { color: var(--brown); }
+  .modal-box h3 { font-size: 22px; color: var(--green-deep); margin-bottom: 6px; }
+  .modal-box .modal-sub { font-size: 14px; color: #999; margin-bottom: 16px; }
+  .modal-box img { width: 100%; border-radius: 8px; border: 1px solid #eee; }
+  .modal-tip { margin-top: 16px; font-size: 15px; color: var(--red); font-weight: 500; }
 </style>
 </head>
 <body>
@@ -738,7 +750,7 @@
       <h1>从东台田间<br>到你家餐桌，<span>只隔48小时</span></h1>
       <p>江苏东台，中国西瓜之乡。沙瓤多汁、糖度高达13度，现摘现发，产地直供不经过中间商。</p>
       <div class="hero-buttons">
-        <a href="#products" class="btn-primary">立即抢购</a>
+        <a href="javascript:void(0)" class="btn-primary" id="grab-btn">立即抢购</a>
         <a href="#story" class="btn-outline">了解产地</a>
       </div>
     </div>
@@ -973,6 +985,18 @@
   </div>
 </footer>
 
+<!-- ===== 团购弹窗 ===== -->
+<div class="group-buy-modal" id="groupBuyModal">
+  <div class="modal-overlay" onclick="closeGroupBuy()"></div>
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeGroupBuy()" aria-label="关闭">×</button>
+    <h3>东台西瓜团购</h3>
+    <p class="modal-sub">微信扫码参与团购接龙</p>
+    <img loading="lazy" decoding="async" src="assets/group-buy.jpg" alt="东台西瓜团购小程序二维码">
+    <p class="modal-tip">长按识别二维码，参与团购接龙</p>
+  </div>
+</div>
+
 <script>
   // 平滑滚动
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -985,11 +1009,26 @@
     });
   });
 
-  // 购买按钮提示
+  // 团购弹窗：点击购买/抢购打开小程序二维码
+  const groupBuyModal = document.getElementById('groupBuyModal');
+  function openGroupBuy() {
+    if (groupBuyModal) groupBuyModal.classList.add('show');
+  }
+  function closeGroupBuy() {
+    if (groupBuyModal) groupBuyModal.classList.remove('show');
+  }
   document.querySelectorAll('.btn-buy').forEach(btn => {
-    btn.addEventListener('click', function() {
-      alert('这是演示页面，实际购买功能待接入支付系统。\n\nDemo 仅展示页面设计与产品布局。');
+    btn.addEventListener('click', openGroupBuy);
+  });
+  const grabBtn = document.getElementById('grab-btn');
+  if (grabBtn) {
+    grabBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      openGroupBuy();
     });
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeGroupBuy();
   });
 </script>
 
