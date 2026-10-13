@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knocket 诊断页</title>
+<style>
+body{font-family:sans-serif;padding:20px;max-width:600px;margin:0 auto;font-size:16px;line-height:1.8}
+h1{font-size:20px}.ok{color:#16a34a}.bad{color:#dc2626}.warn{color:#d97706}
+pre{background:#f6f6f6;padding:12px;border-radius:6px;overflow-x:auto}
+</style>
+</head>
+<body>
+<h1>Knocket 客服诊断</h1>
+<p>此页面会自动检测客服脚本每一步是否正常，等待 15 秒后显示结果。</p>
+<div id="result"><p class="warn">正在检测中，请稍候（最多 20 秒）…</p></div>
+
+<script>
+window.__diag = {start: Date.now(), ua: navigator.userAgent};
+</script>
+<script src="./sdk.js?identifier=309d526b7d5bd900b8&v=1791848359753" async
+  onload="window.__diag.sdkLoaded = true; window.__diag.loadMs = Date.now() - window.__diag.start;"
+  onerror="window.__diag.sdkError = true;"></script>
+<script>
+var report = function() {
+  var d = window.__diag;
+  var el = document.getElementById('result');
+  var rows = [
+    ['SDK 脚本加载', d.sdkLoaded ? '成功(' + d.loadMs + 'ms)' : (d.sdkError ? '失败/超时' : '未加载')],
+    ['contactWidget 对象', (typeof window.contactWidget) === 'object' ? '已创建' : (typeof window.contactWidget)],
+    ['气泡容器', document.querySelector('.contact-widget-auto') ? '已渲染' : '未渲染'],
+    ['页面 body 子元素数', document.body.children.length],
+    ['已等待', (Date.now() - d.start) + 'ms']
+  ];
+  var html = '<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse">';
+  rows.forEach(function(r) {
+    var cls = (r[1] === '成功(0ms)' || r[1] === '已创建' || r[1] === '已渲染') ? 'ok' : (String(r[1]).indexOf('未') === 0 || String(r[1]).indexOf('失败') === 0 ? 'bad' : 'warn');
+    html += '<tr><td>' + r[0] + '</td><td class="' + cls + '">' + r[1] + '</td></tr>';
+  });
+  html += '</table><p>浏览器: ' + (d.ua || '').substring(0, 120) + '</p>';
+  el.innerHTML = html;
+};
+setTimeout(report, 15000);
+</script>
+</body>
+</html>
