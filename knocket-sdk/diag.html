@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Knocket 诊断页</title>
+<title>Knocket 诊断 v2</title>
 <style>
-body{font-family:sans-serif;padding:20px;max-width:600px;margin:0 auto;font-size:16px;line-height:1.8}
-h1{font-size:20px}.ok{color:#16a34a}.bad{color:#dc2626}.warn{color:#d97706}
-pre{background:#f6f6f6;padding:12px;border-radius:6px;overflow-x:auto}
+body{font-family:sans-serif;padding:20px;max-width:640px;margin:0 auto;font-size:15px;line-height:1.8}
+h1{font-size:19px}.ok{color:#16a34a}.bad{color:#dc2626}.warn{color:#d97706}
+pre{background:#f6f6f6;padding:12px;border-radius:6px;overflow-x:auto;font-size:13px}
 </style>
 </head>
 <body>
-<h1>Knocket 客服诊断</h1>
-<p>此页面会自动检测客服脚本每一步是否正常，等待 15 秒后显示结果。</p>
-<div id="result"><p class="warn">正在检测中，请稍候（最多 20 秒）…</p></div>
+<h1>Knocket 客服诊断 v2</h1>
+<p>检测脚本加载、气泡按钮细节、腾讯 API 通道。等待 15 秒显示结果。</p>
+<div id="result"><p class="warn">检测中…最多 25 秒</p></div>
 
 <script>
 window.__diag = {start: Date.now(), ua: navigator.userAgent};
@@ -22,22 +22,40 @@ window.__diag = {start: Date.now(), ua: navigator.userAgent};
   onload="window.__diag.sdkLoaded = true; window.__diag.loadMs = Date.now() - window.__diag.start;"
   onerror="window.__diag.sdkError = true;"></script>
 <script>
+window.__api = {};
+fetch('https://api.trtc.io/common/portal-api-lc', {method: 'POST'})
+  .then(function(r) { window.__api.status = r.status; window.__api.ms = Date.now() - window.__diag.start; })
+  .catch(function(e) { window.__api.error = String(e); window.__api.ms = Date.now() - window.__diag.start; });
+
 var report = function() {
   var d = window.__diag;
   var el = document.getElementById('result');
+  // 气泡按钮细节
+  var cont = document.querySelector('.contact-widget-auto');
+  var btnDetail = '容器未找到';
+  if (cont) {
+    var r = cont.getBoundingClientRect();
+    var kids = [];
+    for (var i = 0; i < cont.children.length; i++) { kids.push(cont.children[i].className); }
+    btnDetail = '容器尺寸=' + Math.round(r.width) + 'x' + Math.round(r.height) +
+      ' | 子元素(' + cont.children.length + '): ' + kids.join(' , ').substring(0, 80);
+  }
+  var visibleEls = document.querySelectorAll('[class*="float-card"], [class*="chat-btn"], [class*="float-btn"], [role="button"]');
+  var apiText = window.__api.error ? ('失败: ' + window.__api.error) : (window.__api.status ? ('HTTP ' + window.__api.status + ' (' + window.__api.ms + 'ms)') : '未完成');
   var rows = [
-    ['SDK 脚本加载', d.sdkLoaded ? '成功(' + d.loadMs + 'ms)' : (d.sdkError ? '失败/超时' : '未加载')],
+    ['SDK 脚本加载', d.sdkLoaded ? '成功(' + d.loadMs + 'ms)' : (d.sdkError ? '加载失败' : '未加载')],
     ['contactWidget 对象', (typeof window.contactWidget) === 'object' ? '已创建' : (typeof window.contactWidget)],
-    ['气泡容器', document.querySelector('.contact-widget-auto') ? '已渲染' : '未渲染'],
-    ['页面 body 子元素数', document.body.children.length],
+    ['气泡容器', cont ? '存在' : '不存在'],
+    ['气泡按钮细节', btnDetail],
+    ['可见按钮元素数', visibleEls.length],
+    ['腾讯 API 通道', apiText],
     ['已等待', (Date.now() - d.start) + 'ms']
   ];
-  var html = '<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse">';
+  var html = '<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%">';
   rows.forEach(function(r) {
-    var cls = (r[1] === '成功(0ms)' || r[1] === '已创建' || r[1] === '已渲染') ? 'ok' : (String(r[1]).indexOf('未') === 0 || String(r[1]).indexOf('失败') === 0 ? 'bad' : 'warn');
-    html += '<tr><td>' + r[0] + '</td><td class="' + cls + '">' + r[1] + '</td></tr>';
+    html += '<tr><td style="width:38%">' + r[0] + '</td><td>' + r[1] + '</td></tr>';
   });
-  html += '</table><p>浏览器: ' + (d.ua || '').substring(0, 120) + '</p>';
+  html += '</table><pre>UA: ' + d.ua.substring(0, 160) + '</pre>';
   el.innerHTML = html;
 };
 setTimeout(report, 15000);
