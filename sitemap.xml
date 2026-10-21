@@ -8,12 +8,18 @@
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://东台西瓜.cn/news/stall-selling.html</loc>
+      <url>
+    <loc>https://东台西瓜.cn/news/community-group-buy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<loc>https://东台西瓜.cn/news/stall-selling.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
