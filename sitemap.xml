@@ -2,18 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://东台西瓜.cn/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-      <url>
+    <loc>https://东台西瓜.cn/news/wholesale-market.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://东台西瓜.cn/news/open-field.html</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,473 +55,395 @@
     <loc>https://东台西瓜.cn/news/community-group-buy.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
-<loc>https://东台西瓜.cn/news/stall-selling.html</loc>
+  <url>
+    <loc>https://东台西瓜.cn/news/stall-selling.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/first-crop.html</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/diabetes.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/hypertension.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/gout-melon.html</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/export.html</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/agent-guide.html</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/brand-guide.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/live-buying.html</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/adopt-melon.html</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/tasty.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/ganmei-4k.html</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/crop-round.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/vs-qilin.html</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/yield-profit.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/group-buy.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/meidu-vs-8424.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/seedless.html</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/ice-sugar-heart.html</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/food-safety.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/picking-tour.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/geographic-indication.html</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/why-not-sweet.html</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/delivery-guide.html</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/processing.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/pregnancy-guide.html</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/origin-location.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/beginner-guide.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/vs-ordinary.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/grade-standard.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/8424-story.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/regional-eats.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/chill-guide.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/grafting.html</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/benefits.html</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/food-combo.html</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/carving.html</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/beauty.html</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/best-time.html</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/off-season.html</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/quality.html</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/drinks.html</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/melon-festival.html</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/seeds.html</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/rumors.html</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/origin-comparison.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/online-buying.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/industry.html</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/sugar-content.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/grow-melon.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/wholesale.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/season-calendar.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/flesh-type.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/who-shouldnt-eat.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/gift-compare.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/autumn-guide.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/kids-guide.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/fun-facts.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/rind-recipes.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/farming.html</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/where-to-buy.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/nutrition.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/cutting-tips.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/bulk-order.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/picking-mistakes.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/history.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/faq.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/authenticate.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/varieties.html</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/why-sweet.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/gift-guide.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/recipes.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/storage-guide.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/calorie-diet.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/launch-time.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/price-guide.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/picking-tips.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://东台西瓜.cn/news/vs-8424.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
